@@ -1,0 +1,163 @@
+/*修改container的最大宽度1280px根据设计稿来*/
+@media screen and (min-width: 1280px){
+    .container{
+        width: 1280px !important;
+    }
+}
+
+.container{
+    background-color: #fff;
+}
+
+.row header{
+       padding-left: 0;
+}
+.logo{
+    background-color: #429ad9;
+}
+.logo img{
+    /*width: 100%;*/
+/*    对logo在超小屏幕小做出限制*/
+    max-width: 100%;
+    /*让图片始终居中*/
+    display: block;
+    margin: 0 auto;
+}
+/*navigation style*/
+.nav{
+    background-color: #eee;
+    border-bottom: 1px solid #ccc;
+    padding:0;
+}
+a{
+    color: #666;
+    text-decoration: none;
+}
+ul li{
+    list-style: none;
+}
+ul li:hover{
+    background-color: #fff;
+}
+.nav a{
+    display: block;
+}
+/*当我们进入小屏和超小屏时li浮动起来，宽度为20%*/
+@media screen and (max-width: 768px){
+    .nav ul li{
+        float: left;
+        width: 20%;
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 575px){
+    .nav ul li{
+        float: left;
+        width: 20%;
+        font-size: 12px;
+
+        white-space: nowrap;
+    }
+}
+
+.nav ul li{
+    display: block;
+    height: 50px;
+    line-height: 50px;
+}
+.nav ul li a::before{
+    padding-right: 5px;
+}
+.nav .row{
+    padding:0;
+}
+.nav ul li a{
+    padding-left: 20px;
+}
+/*new*/
+.new{
+    height: 260px;
+    padding: 0;
+    border: 1px solid black;
+}
+.new ul li{
+    position: relative;
+    float: left;
+    width: 25%;
+    height: 130px;
+    padding-left: 5px;
+    padding-top: 5px;
+    border: 1px solid red;
+    overflow: hidden;
+}
+
+
+
+.new ul li:nth-child(1){
+    width: 50%;
+    height: 260px;
+}
+.new ul li a img{
+    width: 100%;
+    height: 100%;
+}
+.new ul li:nth-child(1) a img{
+    height: 100%;
+}
+.new ul{
+    padding:0;
+    margin: 0;
+}
+
+.new ul li p{
+    background-color: rgba(0,0,0,.8);
+    color: white;
+    position: absolute;
+    left: 5px;
+    bottom: 0;
+    margin-bottom: 0;
+    width: 100%;
+    font-size: 14px;
+    line-height: 1em;
+    padding: 5px 0px 5px 5px;
+}
+
+.new ul li:nth-child(1) p{
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+}
+
+/*publish*/
+.publish {
+    /*border:1px solid black;*/
+    margin: 10px 0 10px;
+    /*border-top: 1px solid black;*/
+    border-bottom: 1px solid black;
+}
+
+.publish h3{
+    margin-top: 10px;
+}
+.publish img{
+    margin-top: 10px;
+    width: 100%;
+}
+aside a:nth-child(2){
+    margin-top: 10px;
+    display: block;
+    border: 1px solid gray;
+}
+
+aside img{
+    width: 100%;
+}
+aside .hot{
+    padding-left: 10px;
+    padding-top: 10px;
+}
+aside .hot h4{
+    margin-top: 5px;
+}
